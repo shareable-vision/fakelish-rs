@@ -1,6 +1,6 @@
 [package]
 name = "fakelish"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Ryo Ota", "Yarrow Lane"]
 edition = "2024"
 license = "MIT"
