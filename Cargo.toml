@@ -1,10 +1,11 @@
 [package]
 name = "fakelish"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Ryo Ota", "Yarrow Lane"]
+repository = "https://github.com/shareable-vision/fakelish-rs"
+description = "English-like word generator; port of Ryo Ota's fakelish"
 edition = "2024"
 license = "MIT"
-description = "English-like word generator; port of Ryo Ota's fakelish"
 
 [features]
 cli = ["dep:clap"]
