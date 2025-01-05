@@ -1,0 +1,26 @@
+[package]
+name = "fakelish"
+version = "0.1.0"
+authors = ["Ryo Ota", "Yarrow Lane"]
+edition = "2024"
+license = "MIT"
+description = "English-like word generator; port of Ryo Ota's fakelish"
+
+[features]
+cli = ["dep:clap"]
+
+[dependencies]
+clap = { version = "4.*", features = ["derive"], optional = true }
+rand = "0.8.5"
+regex = "1.*"
+serde = { version = "1.*", features = ["derive"] }
+serde_json = "1.*"
+
+[lib]
+name = "fakelish"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fakelish"
+path = "src/main.rs"
+required-features = ["cli"]
